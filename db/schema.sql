@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS wagz_db;
+CREATE DATABASE wags_db;
+
+USE wagz_db;
+
 CREATE TABLE Pets (
  id INT PRIMARY KEY,
  name VARCHAR(50) NOT NULL,
