@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS wagz_db;
-CREATE DATABASE wags_db;
+CREATE DATABASE wagz_db;
 
 USE wagz_db;
 
