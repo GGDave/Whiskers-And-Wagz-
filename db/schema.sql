@@ -3,7 +3,7 @@ CREATE DATABASE wagz_db;
 
 USE wagz_db;
 
-CREATE TABLE Pets (
+CREATE TABLE Dogs (
  id INT PRIMARY KEY,
  name VARCHAR(50) NOT NULL,
  age INT,
@@ -13,6 +13,15 @@ CREATE TABLE Pets (
  FOREIGN KEY (breed_id) REFERENCES Breeds(id)
 );
 
+CREATE TABLE Cats (
+ id INT PRIMARY KEY,
+ name VARCHAR(50) NOT NULL,
+ age INT,
+ gender VARCHAR(10),
+ breed_id INT,
+ availability BOOLEAN,
+ FOREIGN KEY (breed_id) REFERENCES Breeds(id)
+);
 
 CREATE TABLE Breeds (
  id INT PRIMARY KEY,
