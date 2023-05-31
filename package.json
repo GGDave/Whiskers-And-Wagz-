@@ -6,11 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-<<<<<<< HEAD
     "seed": "node seeds/seed.js"
-=======
-    "seed": "node seeds/eesd.js"
->>>>>>> dd8d2646b14108ab96309053f0c8364807ab33a9
   },
   "keywords": [],
   "author": "",
@@ -24,13 +20,5 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
-  },
-  "devDependencies": {
-<<<<<<< HEAD
-    "eslint": "^7.12.1",
-    "eslint-config-prettier": "^6.15.0",
-=======
->>>>>>> dd8d2646b14108ab96309053f0c8364807ab33a9
-    "prettier": "^2.1.2"
   }
 }
