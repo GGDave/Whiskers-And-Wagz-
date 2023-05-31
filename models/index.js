@@ -9,19 +9,20 @@ const Pets = require('./Pets');
 const AdoptionRequests = require('./AdoptionRequests');
 
 // Define the relationships between the models
-Breeds.belongsTo(Types, {
+Breeds.hasMany(Types, {
   foreignKey: 'type_id',
+  onDelete: 'CASCADE'
 });
 
 Pets.belongsTo(Types, {
   foreignKey: 'type_id',
 });
 
-Pets.belongsTo(Breeds, {
+Pets.hasMany(Breeds, {
   foreignKey: 'breed_id',
 });
 
-AdoptionRequests.belongsTo(Pets, {
+AdoptionRequests.hasMany(Pets, {
   foreignKey: 'pet_id',
 });
 
