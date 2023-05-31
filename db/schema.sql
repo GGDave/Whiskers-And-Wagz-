@@ -3,9 +3,31 @@ CREATE DATABASE wagz_db;
 
 USE wagz_db;
 
+
 CREATE TABLE Types (
     id INT AUTO_INCREMENT PRIMARY KEY,
     type_name VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE Dogs (
+ id INT PRIMARY KEY,
+ name VARCHAR(50) NOT NULL,
+ age INT,
+ gender VARCHAR(10),
+ breed_id INT,
+ availability BOOLEAN,
+ FOREIGN KEY (breed_id) REFERENCES Breeds(id)
+);
+
+CREATE TABLE Cats (
+ id INT PRIMARY KEY,
+ name VARCHAR(50) NOT NULL,
+ age INT,
+ gender VARCHAR(10),
+ breed_id INT,
+ availability BOOLEAN,
+ FOREIGN KEY (breed_id) REFERENCES Breeds(id)
 );
 
 CREATE TABLE Breeds (
