@@ -10,26 +10,6 @@ CREATE TABLE Types (
 );
 
 
-CREATE TABLE Dogs (
- id INT PRIMARY KEY,
- name VARCHAR(50) NOT NULL,
- age INT,
- gender VARCHAR(10),
- breed_id INT,
- availability BOOLEAN,
- FOREIGN KEY (breed_id) REFERENCES Breeds(id)
-);
-
-CREATE TABLE Cats (
- id INT PRIMARY KEY,
- name VARCHAR(50) NOT NULL,
- age INT,
- gender VARCHAR(10),
- breed_id INT,
- availability BOOLEAN,
- FOREIGN KEY (breed_id) REFERENCES Breeds(id)
-);
-
 CREATE TABLE Breeds (
     id INT AUTO_INCREMENT PRIMARY KEY,
     breed_name VARCHAR(255) NOT NULL,
@@ -37,13 +17,6 @@ CREATE TABLE Breeds (
     FOREIGN KEY (type_id) REFERENCES Types(id)
 );
 
-CREATE TABLE Users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    password_hash VARCHAR(255) NOT NULL,
-    phone_number VARCHAR(15)
-);
 
 CREATE TABLE Pets (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -56,6 +29,14 @@ CREATE TABLE Pets (
     is_adopted BOOLEAN DEFAULT 0,
     FOREIGN KEY (type_id) REFERENCES Types(id),
     FOREIGN KEY (breed_id) REFERENCES Breeds(id)
+);
+
+CREATE TABLE Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(15)
 );
 
 CREATE TABLE AdoptionRequests (
