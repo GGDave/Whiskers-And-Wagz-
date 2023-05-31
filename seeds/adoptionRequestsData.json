@@ -1,0 +1,14 @@
+[
+  {
+    "user_id": 2,
+    "pet_id": 1,
+    "request_date": "2023-05-30T00:00:00Z",
+    "status": "Pending"
+  },
+  {
+    "user_id": 1,
+    "pet_id": 2,
+    "request_date": "2023-05-31T00:00:00Z",
+    "status": "Approved"
+  }
+]
