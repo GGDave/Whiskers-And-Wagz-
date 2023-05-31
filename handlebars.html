@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <script src="handlebars.js"></script>
+</head>
+<body>
+    <script type="text/x-handlebars-template" id="template">
+    {{! this is a comment}}
+    <h1>{{title}}</h1>
+    <ol>
+        {{#each list}}
+        <li>{{this.name}}</li>
+        {{/rach}}
+    </ol>
+    <p>{{footer}}</p>
+    </script>
+    <div id="output">
+
+    </div>
+    <button onclick ="fill_template()">
+    fill template
+</button>
+</body>
+</html>
