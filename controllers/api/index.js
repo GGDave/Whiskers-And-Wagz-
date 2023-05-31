@@ -1,8 +1,17 @@
 const router = require('express').Router();
-const userRoutes = require('./userRoutes');
-const projectRoutes = require('./projectRoutes');
 
-router.use('/users', userRoutes);
-router.use('/projects', projectRoutes);
+// Import route handlers
+const typesRoutes = require('./typesRoutes');
+const breedsRoutes = require('./breedsRoutes');
+const usersRoutes = require('./userRoutes');
+const petsRoutes = require('./petsRoutes');
+const adoptionRequestsRoutes = require('./adoptionRequestRoutes');
+
+// Add routes to router
+router.use('/types', typesRoutes);
+router.use('/breeds', breedsRoutes);
+router.use('/users', usersRoutes);
+router.use('/pets', petsRoutes);
+router.use('/adoptionrequests', adoptionRequestsRoutes);
 
 module.exports = router;

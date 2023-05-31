@@ -1,13 +1,31 @@
-const User = require('./User');
-const Project = require('./Project');
+const Sequelize = require('sequelize');
+const sequelize = require('../config/connection');
 
-User.hasMany(Project, {
+const Types = require('./Types');
+const Breeds = require('./Breeds');
+const Users = require('./Users');
+const Pets = require('./Pets');
+const AdoptionRequests = require('./AdoptionRequests');
+
+// Define the relationships between the models
+Breeds.belongsTo(Types, {
+  foreignKey: 'type_id',
+});
+
+Pets.belongsTo(Types, {
+  foreignKey: 'type_id',
+});
+
+Pets.belongsTo(Breeds, {
+  foreignKey: 'breed_id',
+});
+
+AdoptionRequests.belongsTo(Pets, {
+  foreignKey: 'pet_id',
+});
+
+AdoptionRequests.belongsTo(Users, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
-  foreignKey: 'user_id'
-});
-
-module.exports = { User, Project };
+module.exports = { Types, Breeds, Users, Pets, AdoptionRequests };
