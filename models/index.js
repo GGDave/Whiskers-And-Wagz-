@@ -43,8 +43,9 @@ Adoption.belongsTo(Pet, { foreignKey: 'pet_id' });
 Pet.hasMany(Adoption, { foreignKey: 'pet_id' });
 
 module.exports = {
-  Pet,
-  User,
+  Pets,
+  Breeds,
+  Users,
   Adoption,
 };
 
