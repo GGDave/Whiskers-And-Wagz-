@@ -12,6 +12,6 @@ router.use('/types', typesRoutes);
 router.use('/breeds', breedsRoutes);
 router.use('/users', usersRoutes);
 router.use('/pets', petsRoutes);
-router.use('/adoptionrequests', adoptionRequestsRoutes);
+router.use('/Requests', adoptionRequestsRoutes);
 
 module.exports = router;

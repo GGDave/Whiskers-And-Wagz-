@@ -25,8 +25,41 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
 
   Pets.create(req.body)
-		.then((pets) => res.status(200).json(pets))
+		.then(() => res.status(200).json({ message: 'Post successfully' }))
 		.catch((err) => res.status(400).json(err))
 });
 
+router.put('/:id', (req, res) => {
+	const { breed, type, ...rest } = req.body; // Destructure breed and type, and get the rest of the fields
+  
+	Pets.update({ breed, type, ...rest }, { // Update the breed and type along with other fields
+	  where: {
+		id: req.params.id,
+	  },
+	})
+	  .then(() => res.status(200).json({ message: 'Pet updated successfully' }))
+	  .catch((err) => res.status(400).json(err));
+  });
+
+// router.put('/:id', (req, res) => {
+	
+// 	Pets.update(req.body, {
+// 		  where: {
+// 			  id: req.params.id,
+// 		  },
+// 	  })
+// 		  .then((category) => res.status(200).json(category))
+// 		  .catch((err) => res.status(400).json(err))
+//   });
+
+router.delete('/:id', (req, res) => { 
+	
+	Pets.destroy({
+		where: {
+			id: req.params.id,
+		},
+	})
+	.then(() => res.status(200).json({ message: 'Deletion successfully' }))
+	.catch((err) => res.status(400).json(err))
+});
 module.exports = router;
