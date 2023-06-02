@@ -14,8 +14,8 @@ CREATE TABLE Breeds (
     id INT AUTO_INCREMENT PRIMARY KEY,
     breed_name VARCHAR(255) NOT NULL,
     type_id INT,
-    FOREIGN KEY (type_id) REFERENCES Types(id),
-    ON DELETE SET NULL
+    FOREIGN KEY (type_id) REFERENCES Types(id)
+    
 
 );
 
