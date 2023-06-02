@@ -1,21 +1,19 @@
 <!-- views/pets.handlebars -->
-  <body>
-    <head>
-      <title>Available Pets - Wagz Pet Adoption Agency</title>
-    </head>
+<head>
+  <title>Available Pets - Wagz Pet Adoption Agency</title>
+</head>
 
-    <h1>Available Pets</h1>
+<h1>Available Pets</h1>
 
-    <ul>
-      {{#each pets}}
-      <li>
-        <h2>{{name}}</h2>
-        <p>Type: {{type.type_name}}</p>
-        <p>Breed: {{breed.breed_name}}</p>
-        <p>Gender: {{gender}}</p>
-        <p>Age: {{age}}</p>
-        <!-- Add more pet details as needed -->
-      </li>
-      {{/each}}
-    </ul>
-  </body>
+<ul>
+  {{#each pets}}
+  <li>
+    <h2>{{name}}</h2>
+    <p>Type: {{type.type_name}}</p>
+    <p>Breed: {{breed.breed_name}}</p>
+    <p>Gender: {{gender}}</p>
+    <p>Age: {{age}}</p>
+    <!-- Add more pet details as needed -->
+  </li>
+  {{/each}}
+</ul>
