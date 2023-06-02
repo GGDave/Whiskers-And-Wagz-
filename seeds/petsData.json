@@ -15,4 +15,36 @@
       "user_id": 2,
       "breed_id": 2
     }
+    {
+      "name": "Belle",
+      "age": 3,
+      "gender": "Female",
+      "availability": true,
+      "user_id": 1,
+      "breed_id": 1
+    }
+    {
+      "name": "BooBear",
+      "age": 3,
+      "gender": "Male",
+      "availability": true,
+      "user_id": 1,
+      "breed_id": 1
+    }
+    {
+      "name": "George",
+      "age": 3,
+      "gender": "Male",
+      "availability": true,
+      "user_id": 2,
+      "breed_id": 2
+    }
+    {
+      "name": "Lilly",
+      "age": 3,
+      "gender": "Female",
+      "availability": true,
+      "user_id": 1,
+      "breed_id": 1
+    }
   ]
