@@ -1,5 +1,18 @@
 .pet-listings-container {
     max-width: 900px;
-    margin: 20px auto;
-    background-color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.pet-listing {
+    box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    transition: 400ms ease;
+}
+
+.pet-listings-container .pet-listing:hover {
+    transform: scale(1.03);
 }
