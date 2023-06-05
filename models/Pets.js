@@ -18,7 +18,7 @@ Pets.init(
     type_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: '1',
+      //defaultValue: '1',
       references: {
         model: 'types',
         key: 'id',

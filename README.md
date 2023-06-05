@@ -1,4 +1,3 @@
-# Whiskers-And-Wagz-
 
 ## Whiskers and Wags Pet Adoption Agency
 Welcome to Whiskers and Wags Pet Adoption Agency! We are dedicated to finding loving homes for animals in need. This README.md file provides an overview of our agency and guidelines for using our services.
