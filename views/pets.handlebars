@@ -1,15 +1,15 @@
+<!-- views/pets.handlebars -->
+<h1>Available Pets</h1>
 
-    <h1>Available Pets</h1>
-    <ul>
-      {{#each pets}}
-      <li>
-        <h2>{{name}}</h2>
-        <p>Type: {{type_name}}</p>
-        <p>Breed: {{breed_id}}</p>
-        <p>Gender: {{gender}}</p>
-        <p>Age: {{age}}</p>
-        <!-- Add more pet details as needed -->
-      </li>
-      {{/each}}
-    </ul>
-
+<ul>
+  {{#each pets}}
+  <li>
+    <h2>{{name}}</h2>
+    <p>Type: {{type.type_name}}</p>
+    <p>Breed: {{breed.breed_name}}</p>
+    <p>Gender: {{gender}}</p>
+    <p>Age: {{age}}</p>
+    <!-- Add more pet details as needed -->
+  </li>
+  {{/each}}
+</ul>

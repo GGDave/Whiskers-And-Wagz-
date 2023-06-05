@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>whiskers and wagz!</title>
+    <link rel="stylesheet" href="style.css">
+    <title>{{title}}</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+    <script src="handlebars_template.js"></script>
 </head>
 <body>
-<nav class="header">
-    <p href="#">Whiskers And Wagz <!-- webpage refresh ?? lol -->
-    <a href="#">dogs</a>
-    <a href="#">cats</a>
-</nav>
-{{{body}}}
+  <header> 
+    <h1>{{title}}</h1>
+  </header>
+  <nav>
+    <a href="/">home</a>
+    <a href="/dogs">see dogs!</a>
+    <a href="/cats">see cats!</a>
+    <a href="/birds">see birds!</a>
+  </nav>
+    <div>
+      {{{body}}}
+    </div>
 </body>
 </html>
-
-

@@ -10,7 +10,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 ///// /////Handlebars constants/////////////
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({  });
+const hbs = exphbs.create
 /////// Handlebars module setup/////////////
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
