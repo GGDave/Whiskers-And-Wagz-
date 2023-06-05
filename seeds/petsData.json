@@ -3,6 +3,7 @@
       "name": "Buddy",
       "age": 5,
       "gender": "Male",
+      "type_id": 1,
       "availability": true,
       "user_id": 1,
       "breed_id": 1
@@ -11,6 +12,7 @@
       "name": "Fluffy",
       "age": 3,
       "gender": "Female",
+      "type_id": 2,
       "availability": true,
       "user_id": 2,
       "breed_id": 2
@@ -19,6 +21,7 @@
       "name": "Belle",
       "age": 3,
       "gender": "Female",
+      "type_id": 1,
       "availability": true,
       "user_id": 1,
       "breed_id": 1
@@ -27,6 +30,7 @@
       "name": "BooBear",
       "age": 3,
       "gender": "Male",
+      "type_id": 1,
       "availability": true,
       "user_id": 1,
       "breed_id": 1
@@ -35,6 +39,7 @@
       "name": "George",
       "age": 3,
       "gender": "Male",
+      "type_id": 2,
       "availability": true,
       "user_id": 2,
       "breed_id": 2
@@ -43,6 +48,7 @@
       "name": "Lilly",
       "age": 3,
       "gender": "Female",
+      "type_id": 1,
       "availability": true,
       "user_id": 1,
       "breed_id": 1
