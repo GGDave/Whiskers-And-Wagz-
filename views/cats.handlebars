@@ -1,8 +1,21 @@
-{{#each cats}}
-<h2>Name: {{name}}</h2>
-<h2>Age: {{age}}</h2>
-<h2>Gender: {{genders}}</h2>
-<h2>Available: {{age}}</h2>
-<a href="/singlepet/{{id}}">ADOPT!</a>
-<img src="/images/{{image}}" alt="{{name}} Cat" width="300" height="400">
-{{/each}}
+<div class="adoption-list">
+
+  {{#each cats}}
+    <div class="adoption-item">
+      <div>
+
+        <h2>Name: {{name}}</h2>
+        <h2>Age: {{age}}</h2>
+        <h2>Gender: {{gender}}</h2>
+        <h2>Available: {{availability}}</h2>
+        <a href="/singlepet/{{id}}">ADOPT!</a>
+      </div>
+      <img
+        src="/images/{{image}}"
+        alt="{{name}} Cat"
+        width="300"
+        height="400"
+      />
+    </div>
+  {{/each}}
+</div>

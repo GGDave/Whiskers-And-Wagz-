@@ -5,12 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .navbar {
-    background-color: green;
-  }
-  .navbar-start {
-    font-weight: bold;
-  }
   .header {
     max-width: 900px;
     font-family: Arial, Helvetica, sans-serif;
@@ -62,9 +56,14 @@ body {
   .adopt-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
+  }
+  
+  .adopt-image {
+      flex-basis: 300px; /* Adjust the width as needed */
+      text-align: center;
   }
   
   .adopt-image {
