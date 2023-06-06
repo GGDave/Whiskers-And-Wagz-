@@ -44,7 +44,11 @@ Pets.init(
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: false,
-    }
+    },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     sequelize,
