@@ -1,0 +1,12 @@
+<!-- petListings.handlebars -->
+<div class="pet-listings-container">
+  {{#each pets}}
+  <div class="pet-listing">
+    <img src="{{image}}" alt="{{name}}" width="300" height="300">
+    <h3 class="pet-listing-title">{{name}}</h3>
+    <div class="description">
+      {{description}}
+    </div>
+  </div>
+  {{/each}}
+</div>
