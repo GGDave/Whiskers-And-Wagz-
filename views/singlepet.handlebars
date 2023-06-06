@@ -1,7 +1,36 @@
 <!-- views/pet.handlebars -->
+<div class="adoption-view">
 
-<h1>{{pet.name}}</h1>
-<p>Type: {{type.type_name}}</p>
-<p>Age: {{pet.age}}</p>
-<p>Gender: {{pet.gender}}</p>
+  <h1>Adopt {{pet.name}}</h1>
+  <div class="pet">
+
+    <img src="/Images/{{pet.image}}" alt="{{pet.name}}" />
+    <h1>{{pet.name}}</h1>
+    <p>Type: {{pet.type.type_name}}</p>
+    <p>Age: {{pet.age}}</p>
+    <p>Gender: {{pet.gender}}</p>
+  </div>
+  {{#if logged_in}}
+    <form class="adopt-form" action="/adoption" method="POST">
+
+      <label for="requesterName">Your Name:</label>
+      <input type="text" id="requesterName" name="requesterName" required /><br
+      />
+
+      <label for="requesterEmail">Your Email:</label>
+      <input
+        type="email"
+        id="requesterEmail"
+        name="requesterEmail"
+        required
+      /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  {{else}}
+    <p>Please <a href="/login">login</a> to adopt this pet.</p>
+  {{/if}}
+
+</div>
+
 <!-- Add more pet details as needed -->

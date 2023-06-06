@@ -10,7 +10,22 @@ router.get("/", async (req, res) => {
     const types = petsData.map((types) => types.get({ plain: true }));
     console.log(Types);
 
-    res.render("home", { layout: "main", types });
+    res.render("home", {
+      layout: "main",
+      types,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/login", async (req, res) => {
+  try {
+    if (req.session.logged_in) {
+      return res.redirect("/");
+    }
+    res.render("login", { layout: "main" });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -78,11 +93,20 @@ router.get("/singlepet/:id", async (req, res) => {
       where: {
         id: req.params.id,
       },
+      include: [
+        {
+          model: Types,
+        },
+      ],
     });
     const pet = petsData.get({ plain: true });
     console.log(pet);
 
-    res.render("singlepet.handlebars", { layout: "main", pet });
+    res.render("singlepet", {
+      layout: "main",
+      pet,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
