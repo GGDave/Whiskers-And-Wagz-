@@ -48,6 +48,30 @@ router.get("/cats", async (req, res) => {
   }
 });
 
+router.get("/adoption", async (req, res) => {
+  try {
+    const petsData = await Types.findAll();
+    const types = petsData.map((types) => types.get({ plain: true }));
+    console.log(Types);
+
+    res.render("adoption", { layout: "main", types });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/contact", async (req, res) => {
+  try {
+    const petsData = await Types.findAll();
+    const types = petsData.map((types) => types.get({ plain: true }));
+    console.log(Types);
+
+    res.render("contact", { layout: "main", types });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/singlepet/:id", async (req, res) => {
   try {
     const petsData = await Pets.findOne({

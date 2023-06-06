@@ -6,7 +6,8 @@
       "type_id": 1,
       "availability": true,
       "user_id": 1,
-      "breed_id": 1
+      "breed_id": 1,
+      "image": "Belle-dog.jpg"
     },
     {
       "name": "Fluffy",
