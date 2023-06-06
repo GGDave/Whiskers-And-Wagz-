@@ -6,7 +6,8 @@
       "type_id": 1,
       "availability": true,
       "user_id": 1,
-      "breed_id": 1
+      "breed_id": 1,
+      "image": "BooBear-dog.jpg"
     },
     {
       "name": "Fluffy",
@@ -15,7 +16,8 @@
       "type_id": 2,
       "availability": true,
       "user_id": 2,
-      "breed_id": 2
+      "breed_id": 2,
+      "image": "lloyd-cat.jpg"
     },
     {
       "name": "Belle",
@@ -24,7 +26,8 @@
       "type_id": 1,
       "availability": true,
       "user_id": 1,
-      "breed_id": 1
+      "breed_id": 1,
+      "image": "Belle-dog.jpg"
     },
     {
       "name": "BooBear",
@@ -33,7 +36,8 @@
       "type_id": 1,
       "availability": true,
       "user_id": 1,
-      "breed_id": 1
+      "breed_id": 1,
+      "image": "BooBear-dog.jpg"
     },
     {
       "name": "George",
@@ -42,7 +46,8 @@
       "type_id": 2,
       "availability": true,
       "user_id": 2,
-      "breed_id": 2
+      "breed_id": 2,
+      "image": "George-cat.jpg"
     },
     {
       "name": "Lilly",
@@ -51,6 +56,7 @@
       "type_id": 1,
       "availability": true,
       "user_id": 1,
-      "breed_id": 1
+      "breed_id": 1,
+      "image": "Lilly-dog.jpg"
     }
   ]
