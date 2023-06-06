@@ -5,7 +5,7 @@ const { Pets, Breeds, Types } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const petsData = await Pets.findAll();
-    res.status(200).json(petsData);
+    res.render("pets", { pets: petsData.map((pets) => pets.get({ plain: true })) });
   } catch (err) {
     res.status(500).json(err);
   }

@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>{{title}}</title>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
     <script src="handlebars_template.js"></script>
 </head>
-<body>
   <header> 
     <h1>{{title}}</h1>
   </header>
   <nav>
-    <a href="/">home</a>
-    <a href="/dogs">see dogs!</a>
-    <a href="/cats">see cats!</a>
-    <a href="/birds">see birds!</a>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="/">
+          Home
+          </a>
+					<a class="navbar-item" href="/public/contact.html">
+						Contact
+					</a>
+          <a class="navbar-item" href="/dogs">
+          Dogs
+          </a>
+          <a class="navbar-item" href="/cats">
+          Cats
+          </a>
+    		<a class="navbar-item" href="/public/petListings.html">
+						Adopt
+					</a>
   </nav>
-    <div>
-      {{{body}}}
-    </div>
-</body>
+ {{{body}}}
+      
 </html>

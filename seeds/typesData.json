@@ -1,11 +1,11 @@
 [
   {
-    "type": "Dog"
+    "type_name": "Dog"
   },
   {
-    "type": "Cat"
+    "type_name": "Cat"
   },
   {
-    "type": "Bird"
+    "type_name": "Bird"
   }
 ]
