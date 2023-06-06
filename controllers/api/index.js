@@ -3,7 +3,7 @@ const router = require('express').Router();
 // Import route handlers
 const typesRoutes = require('./typesRoutes');
 const breedsRoutes = require('./breedsRoutes');
-const usersRoutes = require('./userRoutes');
+const usersRoutes = require('./usersRoutes');
 const petsRoutes = require('./petsRoutes');
 const adoptionRequestsRoutes = require('./adoptionRequestRoutes');
 
